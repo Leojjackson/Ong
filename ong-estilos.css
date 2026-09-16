@@ -34,7 +34,12 @@ main {
 }
 
 .box {
+    background-image: url("https://images.pexels.com/photos/34499761/pexels-photo-34499761.jpeg?_gl=1*unmw9y*_ga*MTIwMzgzMDMwNS4xNzg3NTI5MTU4*_ga_8JE65Q40S6*czE3ODk1OTkwNTkkbzIkZzEkdDE3ODk1OTkzNjEkajU5JGwwJGgw");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
     width: 250px;
     height: 250px;
     border: 1px solid black;
+    border-radius:1rem;
 }
