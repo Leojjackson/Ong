@@ -56,3 +56,24 @@ aside {
     top:700px;
 
 }
+#h1apoio {
+   text-align: center;
+   margin-top: 10rem;
+}
+
+#apoio > div {
+    margin-top: 3rem;
+    background-image: url("https://images.pexels.com/photos/6647027/pexels-photo-6647027.jpeg?");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    border-radius:15px;
+    width:100vw;
+    height:550px;
+
+}
+#article2{
+    margin: 4rem auto;
+    width: 1000px;
+    height: 200px;
+}
