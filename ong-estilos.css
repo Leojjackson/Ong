@@ -4,6 +4,7 @@ html, body {
     padding: 0;
 }
 ul{
+    margin:0px;
     display:flex;
     justify-content: center;
     gap: 13rem;
