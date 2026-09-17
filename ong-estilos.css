@@ -77,3 +77,24 @@ aside {
     width: 1000px;
     height: 200px;
 }
+#contatoh1 {
+    text-align:center;
+}
+#contato {
+    margin-top: 5rem;
+    display:flex;
+    justify-content:center;
+    gap: 13rem;
+    width: 100vw;
+    height: 500px;
+}
+#leojjackson {
+    position: absolute;
+    left: 23rem;
+    padding:2rem;
+}
+#leoduarte {
+    position: absolute;
+    right: 25rem;
+    padding:2rem;
+}
