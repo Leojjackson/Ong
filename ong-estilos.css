@@ -13,12 +13,40 @@ ul{
     flex-direction:row;
 }
 
+/* 
+    Botão de Dark
+*/
+
+.btn {
+    position: absolute;
+    right:10rem;
+    top:3rem;
+    font-weight: 700;
+}
+/* Estilo padrão (Modo Claro) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Estilo quando a classe dark-mode estiver ativa */
+body.dark-mode {
+  background-color: #121212; /* Fundo escuro para a página toda */
+  color: #ffffff;            /* Texto geral branco */
+}
+
+/* Deixa os links na cor branca no modo escuro */
+body.dark-mode a {
+  color: #ffffff;
+}
+/*  */
+
 ul > li {
     margin-top:3rem;
     font-family:arial;
     font-weight: 400;
     font-style:normal;
-
 }
 a {
     text-decoration: none;
