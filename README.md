@@ -7,5 +7,4 @@
 Um projeto com simplicidade mas feito por quem quer aprender a programar.<br>
 HTML, Css e JavaScript foram aplicados a esse projeto com atenão em cada detalhe, agradeco po terem lido até aqui.
 
-# 👉 Segue o link do Projeto:
-ong-class-project.netlify.app 
+# 👉 Segue o link do Projeto: https://app.netlify.com/projects/ong-class-project 
