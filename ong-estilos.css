@@ -1,28 +1,32 @@
 html, body {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
 }
-ul{
-    margin:0px;
-    display:flex;
+
+/* Menu responsivo */
+ul {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
     justify-content: center;
-    gap: 13rem;
+    align-items: center;
+    gap: 4rem;
     list-style: none;
-    flex-direction:row;
+    flex-wrap: wrap; 
 }
 
-/* 
-    Botão de Dark
-*/
-
+/* Botão de Dark Mode */
 .btn {
     position: absolute;
-    right:10rem;
-    top:3rem;
+    right: 2rem;
+    top: 1.5rem;
     font-weight: 700;
+    z-index: 10;
 }
+
 /* Estilo padrão (Modo Claro) */
 body {
   background-color: #ffffff;
@@ -32,97 +36,127 @@ body {
 
 /* Estilo quando a classe dark-mode estiver ativa */
 body.dark-mode {
-  background-color: #121212; /* Fundo escuro para a página toda */
-  color: #ffffff;            /* Texto geral branco */
+  background-color: #121212;
+  color: #ffffff;            
 }
 
-/* Deixa os links na cor branca no modo escuro */
 body.dark-mode a {
   color: #ffffff;
 }
-/*  */
 
 ul > li {
-    margin-top:3rem;
-    font-family:arial;
+    margin-top: 1rem;
+    font-family: arial;
     font-weight: 400;
-    font-style:normal;
 }
+
 a {
     text-decoration: none;
-    color: #333333
+    color: #333333;
 }
+
 #logo {
-    width: 100px;
-    height: 100px;
-    padding:5px 5px;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
     background: transparent;
-    border-radius:50%
+    border-radius: 50%;
 }
+
 .box {
     background-image: url("https://images.pexels.com/photos/6646923/pexels-photo-6646923.jpeg?");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center 30%;
-    width: 100vw;
-    height: 550px;
+    width: 100%;
+    height: 500px;
 }
 
-/* Parte 2 da página */
+/* Seção principal e Aside organizados com Flexbox lado a lado em telas grandes */
+.conteudo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 5rem;
+    margin-top: 2rem;
+}
 
 #texto1 {
-    width: 600px;
-    height: 600px;
-    margin-left: 25rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 700px;
 }
-aside {
-    width:300px;
-    height: 600px;
-    letter-spacing: 3px;
-    position:absolute;
-    right: 500px;
-    top:700px;
 
+aside {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
+
 #h1apoio {
    text-align: center;
-   margin-top: 10rem;
+   margin-top: 5rem;
 }
 
 #apoio > div {
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-image: url("https://images.pexels.com/photos/6647027/pexels-photo-6647027.jpeg?");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
-    border-radius:15px;
-    width:100vw;
-    height:550px;
+    background-size: contain;
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+}
 
+#article2 {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 0 1rem;
 }
-#article2{
-    margin: 4rem auto;
-    width: 1000px;
-    height: 200px;
-}
+
 #contatoh1 {
-    text-align:center;
+    text-align: center;
+    margin-top: 4rem;
 }
+
+/* Seção de Contato ajustada com Flexbox */
 #contato {
-    margin-top: 5rem;
-    display:flex;
-    justify-content:center;
-    gap: 13rem;
-    width: 100vw;
-    height: 500px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1rem;
 }
-#leojjackson {
-    position: absolute;
-    left: 23rem;
-    padding:2rem;
+
+#contato img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-#leoduarte {
-    position: absolute;
-    right: 25rem;
-    padding:2rem;
+
+/* Bloco dos criadores organizado lado a lado ou empilhado responsivamente */
+.container-autores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1rem;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.autor-card {
+    min-width: 280px;
+    max-width: 350px;
+    padding: 1rem;
 }
