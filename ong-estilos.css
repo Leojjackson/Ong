@@ -141,6 +141,7 @@ aside {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 1px;
 }
 
 /* Bloco dos criadores organizado lado a lado ou empilhado responsivamente */
